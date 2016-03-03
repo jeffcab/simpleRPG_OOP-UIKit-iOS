@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  simpleRPGwithOOP
 //
-//  Created by Jeffrey Cabrera on 20/02/2016.
+//  Created by Jeffrey Cabrera
 //  Copyright © 2016 jcab. All rights reserved.
 //
 
