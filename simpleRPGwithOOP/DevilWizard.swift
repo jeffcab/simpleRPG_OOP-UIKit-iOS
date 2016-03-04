@@ -14,7 +14,7 @@ class DevilWizard: Enemy {
         return ["Rubber Duckie", "Fake Amulet", "Ken Doll", "Salted Peanuts"]
     }
     
-    override var type: String {
+    override var enemytype: String {
         return "Devil Wizard"
     }
     

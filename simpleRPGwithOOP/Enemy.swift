@@ -14,7 +14,7 @@ class Enemy: Character {
         return ["Broken Bottle", "Used Diapers"]
     }
     
-    var type: String {
+    var enemytype: String! {
         return "Grunt"
     }
     

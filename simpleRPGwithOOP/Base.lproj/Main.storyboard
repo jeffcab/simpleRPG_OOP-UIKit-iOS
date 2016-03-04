@@ -21,17 +21,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="A1p-wD-y1o">
                                 <rect key="frame" x="0.0" y="-7" width="600" height="607"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAs-QK-jVc">
-                                <rect key="frame" x="224" y="536" width="153" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="DYm-Xl-bSS"/>
-                                    <constraint firstAttribute="width" constant="153" id="xsW-HN-IoW"/>
-                                </constraints>
-                                <state key="normal" image="Attack"/>
-                                <connections>
-                                    <action selector="onBtnAttackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aP0-Fk-Mum"/>
-                                </connections>
-                            </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYN-eH-90P">
                                 <rect key="frame" x="336" y="333" width="319" height="195"/>
                                 <state key="normal" title="Button" image="chest2"/>
@@ -76,6 +65,17 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAs-QK-jVc">
+                                <rect key="frame" x="224" y="536" width="153" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="DYm-Xl-bSS"/>
+                                    <constraint firstAttribute="width" constant="153" id="xsW-HN-IoW"/>
+                                </constraints>
+                                <state key="normal" image="Attack"/>
+                                <connections>
+                                    <action selector="onBtnAttackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aP0-Fk-Mum"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -128,6 +128,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="btnAttack" destination="sAs-QK-jVc" id="8bA-9v-rIO"/>
                         <outlet property="btnChest" destination="jYN-eH-90P" id="heX-36-ETS"/>
                         <outlet property="imgEnemy" destination="fz1-PI-Xt1" id="582-1m-h88"/>
                         <outlet property="lblEnemyHp" destination="nPk-sA-ZUJ" id="uYm-uK-dJw"/>

@@ -16,7 +16,7 @@ class Kimara: Enemy {
         return ["Tough Dragon Scale", "Ingrown Toenail", "Kimara's Venom"]
     }
     
-    override var type: String {
+    override var enemytype: String {
         return "Kimara"
     }
     
